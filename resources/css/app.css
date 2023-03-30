@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+
+    .btn-primary{
+        @apply bg-primary font-semibold text-gray-50 px-5 py-2 rounded-full shadow-lg hover:shadow-gray-400 hover:bg-level2 disabled:bg-gray-300 disabled:text-gray-600 disabled:cursor-not-allowed disabled:shadow-sm cursor-pointer
+    }
+
+    .btn-secondary{
+        @apply bg-secondary font-semibold text-gray-100 px-3 py-2 rounded-xl hover:bg-level2 cursor-pointer duration-200
+    }
+
+    .title-page{
+        @apply text-gray-800 font-bold text-4xl text-center
+    }
+
+    .paragraph-text{
+        @apply text-gray-800 font-medium
+    }
+
+    .card{
+        @apply bg-primary  py-5 px-8 mx-10 my-10 text-gray-100 rounded-xl shadow-lg hover:ring-2 hover:ring-secondary hover:shadow-secondary cursor-pointer duration-200
+    }
+
+    .card-dashboard{
+        @apply py-3 px-8 mx-3 my-3 text-gray-800 rounded-xl shadow-lg hover:shadow-gray-400 cursor-pointer duration-200
+    }
+
+    .card-title{
+        @apply font-bold text-xl
+    }
+
+    .card-content{
+        @apply font-semibold text-sm
+    }
+
+    .card-footer{
+        @apply font-semibold text-lg
+    }
+
+    .list{
+        @apply font-semibold
+    }
+
+    .item-list{
+        @apply decoration-slice
+    }
+
+    .input-group{
+        @apply my-6 text-gray-800 font-semibold flex flex-col
+    }
+
+    .input-group input{
+        @apply ring-1 ring-gray-500 active:ring-gray-600 rounded-lg px-3 py-2 mt-2 font-normal shadow-md duration-300
+    }
+
+    .list-menu{
+        @apply my-3
+    }
+    .item-menu{
+        @apply text-gray-100 px-3 py-2 my-1 rounded-xl hover:bg-level2 cursor-pointer font-semibold flex gap-2 items-center
+    }
+
+    .item-menu-active{
+        @apply text-secondary bg-cyan-200
+    }
+
+    .input-form{
+        @apply ring-1 ring-level2 rounded-lg px-3 py-2 mt-2 font-normal duration-300
+    }
+
+    .table-lay{
+        @apply relative overflow-x-auto shadow-lg sm:rounded-lg
+    }
+
+    .table-lay table{
+        @apply w-full text-sm text-left text-gray-500
+    }
+
+    .information{
+        @apply gap-2 my-3 text-gray-800
+    }
+
+    .information h3{
+        @apply font-semibold text-lg
+    }
+
+    .information h4{
+        @apply font-medium text-sm
+    }
+    
+}
